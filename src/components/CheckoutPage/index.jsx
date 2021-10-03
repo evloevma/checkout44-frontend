@@ -10,7 +10,7 @@ const CheckoutPage = () => {
   const [cartItems, setCartItems] = useState([]);
 
   const getItems = async () => {
-    const { data: items } = await axios.get("http://localhost:3001/items");
+    const { data: items } = await axios.get("https://checkout-44.herokuapp.com/items");
     setCartItems(items);
   };
 
